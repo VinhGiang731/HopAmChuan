@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "384968556519",
+    "firebase_url": "https://hopamchuan-fa729-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "hopamchuan-fa729",
+    "storage_bucket": "hopamchuan-fa729.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:384968556519:android:ef34dc9baf2072c3c50742",
+        "android_client_info": {
+          "package_name": "com.example.hopamchuan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2xOn-CYDx-5hLzktmDqYRT2bX5e9yALc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
