@@ -31,13 +31,21 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         list = mutableListOf()
+        database = FirebaseDatabase.getInstance().getReference("NhacBallad")
 
         setUpAdapterListSong()
         getDataFromFireBase()
+        addEventBtnSearch()
+    }
+
+    private fun addEventBtnSearch() {
+        binding.btnSearch.setOnClickListener {
+            val i = Intent(this, SearchActivity::class.java)
+            startActivity(i)
+        }
     }
 
     private fun getDataFromFireBase() {
-        database = FirebaseDatabase.getInstance().getReference("NhacBallad")
         database.addValueEventListener(object : ValueEventListener {
             @SuppressLint("NotifyDataSetChanged")
             override fun onDataChange(snapshot: DataSnapshot) {

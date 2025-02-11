@@ -6,8 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    android:orientation="vertical"
     android:keepScreenOn="true"
+    android:orientation="vertical"
     tools:context=".LyricActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -32,25 +32,29 @@
             android:id="@+id/btn_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
             android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="button back"
+            android:padding="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_back" />
+            app:srcCompat="@drawable/ic_back"
+            tools:ignore="HardcodedText" />
 
-        <androidx.appcompat.widget.AppCompatImageButton
-            android:id="@+id/btn_favorite"
-            android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
-            android:padding="10dp"
             android:background="?attr/selectableItemBackgroundBorderless"
-            android:contentDescription="button favorite"
+            android:contentDescription="Button back"
+            android:padding="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_favorite_border_white"
-            tools:ignore="HardcodedText" />
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/hopamchuan"
+            tools:ignore="ContentDescription,HardcodedText" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ScrollView
